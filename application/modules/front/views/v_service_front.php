@@ -59,39 +59,20 @@
             <hr><i class="" aria-hidden="true"></i>
             <p class="content">
                 <div class="row">
+                  <?php foreach ($jasa->result() as $r): ?>
                     <div class="col-sm-3">
                       <!-- <a href="<?php echo site_url().'frontservice/detail/1' ?>"> -->
                         <a href="#">
                             <div class="circle-services">
-                                <h2>Panggung</h2>
+                                <h2><?php echo $r->service_name ?></h2>
                                 <div class="content-caption">
                                     <!-- STYLISH HAIR SALON -->
+                                    Rp .<?php echo $r->service_harga ?> / <?php echo $r->hitungan_jam ?> Jam
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-sm-3">
-                      <a href="#">
-                        <!-- <a href="<?php echo site_url().'frontservice/detail/2' ?>"> -->
-                            <div class="circle-services">
-                                <h2>Sound</h2>
-                                <div class="content-caption">
-                                    <!-- MAKE UP BY PROFESSIONAL -->
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-3">
-                      <!-- <a href="<?php echo site_url().'frontservice/detail/3' ?>"> -->
-                        <a href="#">
-                            <div class="circle-services">
-                                <h2>Alat Musik</h2>
-                                <div class="content-caption">
-                                    <!-- RELAX WITH OUR THREATMENT -->
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <?php endforeach ?>
                 </div>
             </p>
         </div>

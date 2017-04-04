@@ -17,7 +17,7 @@ class C_service_front extends MX_Controller {
     }
 	public function scror_service(){
         $data = array();
-				$data['jasa'] = $this->m_base->get_data('m_service', array('service_active'=>'y'), 'service_id, service_name,service_desc,service_harga');
+				$data['jasa'] = $this->m_base->get_data('m_service', array('service_active'=>'y'), 'service_id, service_name,service_desc,service_harga,hitungan_jam');
         $this->load->view('v_service_front', $data, false);
     }
 	public function service()
