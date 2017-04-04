@@ -1,0 +1,417 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .head-contact span{
+        padding-left: 20px;
+    }
+
+    .openingday{
+        line-height: 30px;
+        position: relative;
+        right: 0;
+
+    }
+    .abt-event {
+        padding:30px 20px;
+    }
+
+    .detail a {
+        bottom: 20px;
+    }
+    .top-menu{
+        float: right;
+        margin-top: 15px;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: right !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+
+    .sosial-media{
+        padding: 5px;
+        position: absolute;
+        font-size: 25px;
+        z-index: 99999;
+        left: 130px;
+        right: auto;
+        top: 0;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .logo, .head-contact {
+        text-align: center;
+    }
+    .right{
+        float: none;
+    }
+
+
+    .contact-info, .contact-info2, .contact-info3{
+      margin-bottom: 20px;
+    }
+    .pembayaran{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .payment-confirmation{
+        width: 90%;
+    }
+
+    .abt-event {
+        padding:60px 40px;
+    }
+
+    .detail a {
+        bottom: 20px;
+    }
+    .opening-time{
+        padding: 90px 30px;
+        margin-top: 10px;
+    }
+
+    .openingday{
+        line-height: 30px;
+        position: relative;
+        right: 0;
+
+    }
+
+    .reservation{
+        margin-top: 40px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    .nav-container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .countdown, .countdown2, .countdown3{
+        margin-top: 0;
+    }
+
+    .sosial-media{
+        padding: 5px;
+        position: absolute;
+        font-size: 25px;
+        z-index: 99999;
+        left: 20px;
+        right: auto;
+    }
+    .contact-info, .contact-info2, .contact-info3{
+      margin-bottom: 20px;
+    }
+    .trend-images {
+        margin-bottom: 30px;
+    }
+    .footer{
+        text-align: center;
+    }
+
+    .clear{
+        margin-top: -20px;
+    }
+    .hovereffect {
+      left: 15%;
+    }
+    .container{
+        width: 100%;
+    }
+
+    .reservation-container{
+        position: relative;
+        bottom: 0;
+        background-color: #fff;
+        border: 9px #121212 solid;
+        z-index: 99;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: -100px;
+    }
+
+    .opening-time{
+        padding: 90px 10px;
+        margin-top: 10px;
+    }
+
+    .openingday{
+        line-height: 30px;
+        position: relative;
+        right: 0;
+
+    }
+    .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .nav-container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .banner-slider{
+        margin-top: 0;
+    }
+    .openingday{
+        line-height: 30px;
+        position: relative;
+        right: 0;
+
+    }
+
+    .opening-time{
+        padding: 30px 10px;
+        margin-top: 10px;
+    }
+
+
+    .trend-images {
+        margin-bottom: 30px;
+    }
+
+    .contact-info, .contact-info2, .contact-info3{
+      margin-bottom: 20px;
+    }
+
+    .top-bar{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .welcome-pic {
+        margin-top: 20px;
+    }
+
+    .countdown, .countdown2, .countdown3{
+        margin-top: 0;
+    }
+
+    .container-gallery{
+        background: url('../../images/gallery-glam.jpg') repeat center fixed;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .abt-event {
+        padding:40px 30px;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 100%;
+    }
+
+    .hovereffect a, .hovereffect p {
+      margin-top: 60px;
+    }
+
+
+    .sosial-media{
+        padding: 5px;
+        position: absolute;
+        font-size: 25px;
+        z-index: 99999;
+        left: 20px;
+        right: auto;
+        top: 0;
+    }
+    .abt-event > h3 {
+        font-size: 18px;
+    }
+
+    .detail a {
+        bottom: 20px;
+    }
+
+    .title-single h2{
+        font-weight: 900;
+        color: #bf9958;
+        margin-bottom: 10px;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .title-single p{
+        color: #fff;
+        font-size: 15px;
+        border-top: 1px #fff solid;
+        border-bottom: 1px #fff solid;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .navigate li a{
+        padding: 5px 10px;
+    }
+
+
+    .caption-stylish{
+        float: left;
+        margin-left: 270px;
+        padding-top: 20px;
+    }
+
+    .caption-stylish h3{
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .caption-stylish hr{
+        width: 200px;
+        color: #000;
+        border: 1px #fff solid;
+        float: left;
+        margin-right: 5px;
+        margin-top: 12px;
+    }
+
+    .caption-stylish i{
+        font-size: 25px;
+        color: #bf9958;
+    }
+
+    .caption-category {
+        margin-top: 10px;
+        color: #BF9958;
+        line-height: 30px;
+        font-weight: 700;
+        position: absolute;
+    }
+
+    .caption-price {
+        margin-top: 10px;
+        line-height: 30px;
+        position: absolute;
+        left: 400px;
+        color: #fff;
+    }
+
+    .hair{
+        background:url('../../images/gallery-glam.jpg') no-repeat center;
+        height: 450px;
+        margin-bottom: 30px;
+    }
+
+    .hair-stylish {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 20px;
+        margin: 0 auto;
+    }
+
+    .label {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        right: 170px;
+        top: 20px;
+        border-radius: 100%;
+        background-color: #BF9956;
+        margin: 0 auto;
+    }
+
+    .caption-stylish{
+        float: left;
+        margin-left: 30px;
+        margin-top: 270px;
+        padding-top: 20px;
+    }
+
+
+    .caption-price {
+        margin-top: 10px;
+        line-height: 30px;
+        position: absolute;
+        left: 150px;
+        color: #fff;
+    }
+
+    .clear{
+        margin-top: -20px;
+    }
+
+    .head-contact{
+        display: none;
+    }
+
+    .hovereffect {
+      left: 15%;
+    }
+    .space-up{
+        margin-top: -17px;
+    }
+
+    .top-menu{
+        float: right;
+        margin-top: 15px;
+    }
+    .container{
+        width: 100%;
+    }
+    .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+
+
+
+    .opening-time{
+        padding: 30px;
+        margin-top: 10px;
+    }
+
+    .hovereffect {
+      left: 6%;
+    }
+
+}
