@@ -692,6 +692,14 @@ var FormValidation = function () {
                  service_desc:{
                     required: true
                 },
+                service_harga :{
+                  required: true,
+                  digits : true
+                },
+                hitungan_jam :{
+                  required:true,
+                  digits:true
+                },
 
             },
 

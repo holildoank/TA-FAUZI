@@ -28,7 +28,7 @@
             </div>
             <div class="col-md-6">
                 <div class="welcome-pic">
-                    <img src="<?php echo base_url() ?>/front/images/logo-box.png" class="img-responsive" alt="" />
+                    <img src="<?php echo base_url() ?>/front/images/mustika3.png" class="img-responsive" alt="" />
                 </div>
             </div>
         </div>

@@ -12,10 +12,10 @@ if($mode=='edit'){
 		<div class="modal-body">
             <form class="horizontal-form" id="form_service">
     			<div class="form-body">
-                    <div class="alert alert-danger display-hide">
-                        <button class="close" data-close="alert"></button> You have some form errors. Please check below.
-                    </div>
-                    <div class="row">
+              <div class="alert alert-danger display-hide">
+                  <button class="close" data-close="alert"></button> You have some form errors. Please check below.
+              </div>
+              <div class="row">
     					<div class="col-md-12">
               <div class="form-group">
                   <label class="control-label">Service *</label>

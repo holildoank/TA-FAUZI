@@ -58,7 +58,7 @@
         <div class="title-content">
             <h2>CONTACT US</h2>
             <p>GET IN TOUCH WITH US</p>
-            <hr><i class="fa fa-scissors" aria-hidden="true"></i>
+            <hr><i class="" aria-hidden="true"></i>
         </div>
         <div class="container service-col">
             <div class="row">
@@ -68,8 +68,7 @@
                       <i class="fa fa-map-marker" aria-hidden="true"></i>
                   </div>
                   <p>
-                      Soho Waterplace A27,
-                      Apartemen Waterplace Pakuwon Indah,
+                      Kamal
                       Jawa Timur 60216
                   </p>
                 </div>
@@ -97,7 +96,7 @@
     </div>
 </div>
 <div class="container-fluid maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7915.073954086734!2d112.67045474141842!3d-7.293401553592124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24e81f3fdf63153a!2sGLAM+Hair+Culture!5e0!3m2!1sen!2sid!4v1473914401232" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7915.073954086734!2d112.67045474141842!3d-7.293401553592124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24e81f3fdf63153a!2sGLAM+Hair+Culture!5e0!3m2!1sen!2sid!4v1473914401232" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 </div>
 
 <div class="container-fluid footer">
@@ -135,18 +134,18 @@
 
     });
 
-    // function konfirmasi_cek() {
-    //     $.ajax({
-    //         url: "<?php echo site_url('reservation/cek_konfirmasi') ?>",
-    //         cache: false,
-    //         success: function(msg){
-    //             $("#konfirmasi").html(msg);
-    //             $(".konfirmasi").html(msg);
-    //         }
-    //     });
-    //     var waktu =setTimeout("konfirmasi_cek()",4000);
-    // }
-    // $(document).ready(function() {
-    //     konfirmasi_cek();
-    // });
+    function konfirmasi_cek() {
+        $.ajax({
+            url: "<?php echo site_url('reservation/cek_konfirmasi') ?>",
+            cache: false,
+            success: function(msg){
+                $("#konfirmasi").html(msg);
+                $(".konfirmasi").html(msg);
+            }
+        });
+        var waktu =setTimeout("konfirmasi_cek()",4000);
+    }
+    $(document).ready(function() {
+        konfirmasi_cek();
+    });
 </script>

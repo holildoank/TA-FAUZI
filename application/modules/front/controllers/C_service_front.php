@@ -23,6 +23,7 @@ class C_service_front extends MX_Controller {
 	public function service()
     {
         $data = array();
+				$data['jasa'] = $this->m_base->get_data('m_service', array('service_active'=>'y'), 'service_id, service_name,service_desc,service_harga,hitungan_jam');
         $data_view['content_layout']=$this->load->view('v_single_service_front', $data, true);
         echo modules::run('base/c_base/front_view2', $data_view);
     }
