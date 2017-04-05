@@ -38,17 +38,22 @@ class C_reservation_front extends MX_Controller {
 		$jam   = floor($diff / (60 * 60));
 		$menit = $diff - $jam * (60 * 60);
 		$query1=$this->m_base->get_data('m_service', array('service_active'=>'y', 'service_id'=>$data['service_id']), 'service_name,service_harga,hitungan_jam')->row();
-		$harga = $query1->service_harga;
-		$jamHarga = $query1->hitungan_jam;
-		$hargaPerjam= $harga / $jamHarga;
-		$total = $hargaPerjam * $jam;
-		// var_dump($total);
-		if($menit > 49){
-			$hargaMenit = $hargaPerjam /2;
+ 	if($jam < 10){
+			$harga = $query1->service_harga;
+			$totalHarga = $harga;
 		}else{
-			$hargaMenit =0;
+			$harga = $query1->service_harga;
+			$jamHarga = $query1->hitungan_jam;
+			$hargaPerjam= $harga / $jamHarga;
+			$total = $hargaPerjam * $jam;
+			if($menit > 49){
+				$hargaMenit = $hargaPerjam /2;
+			}else{
+				$hargaMenit =0;
+			}
+			$totalHarga = $total + $hargaMenit;
 		}
-		$totalHarga = $total + $hargaMenit;
+		// var_dump($total);
 		$data['totalHarga'] = $totalHarga;
 		$data['data_service_reservation'] = $this->m_base->get_data('m_service', array('service_active'=>'y', 'service_id'=>$data['service_id']), 'service_name,service_id');
 		$data_view['content_layout'] = $this->load->view('v_reservation_single', $data, true);
@@ -99,6 +104,7 @@ class C_reservation_front extends MX_Controller {
 	    }
   public function create_action(){
 				$createat = date('Y-m-d H:i:s');
+				// var_dump($createat);
 				$service_id = $this->input->post('service_id');
 				$tanggalmulai =  date('Y-m-d', strtotime($this->input->post('tanggalmulai')));
 				$jamMulai = date('H:i', strtotime($this->input->post('jamMulai')));
@@ -307,6 +313,7 @@ class C_reservation_front extends MX_Controller {
 				$setengah_harga =$harga_prodcut / 2;
 				$cek_id_number= $this->db->query($sql_cek_number)->row();
 				$reservation_number = $cek_id_number->reservation_number;
+				// var_dump($bayar,$setengah_harga);
 				if ($bayar ==$setengah_harga || $bayar == $harga_prodcut) {
 					$data = array('reservation_methode'   => $this->input->post('reservation_methode'),
 												'reservation_amount_paid' => $this->input->post('reservation_amount_paid'),
@@ -321,7 +328,7 @@ class C_reservation_front extends MX_Controller {
 				}elseif ($bayar > $harga_prodcut) {
 					$result['stat'] = false;
 					$result['pesan'] = 'Mohon Maaf nominal yang anda masukan lebih besar dari harga Product.';
-				}else{
+				}elseif($bayar < $setengah_harga){
 					$result['stat'] = false;
 					$result['pesan'] = 'Mohon Maaf nominal yang anda masukan kurang dari 50% harga product.';
 				}

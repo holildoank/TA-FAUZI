@@ -10,11 +10,11 @@
                     <div class="content">
                         <b>ABOUT US</b>
                         <p class="paragraph">
-                            Glam hair Culture Was established 23 December 2008 to focus on providing essential  professional services and treatments to you based on quality , care and results. To ensure our clients are always valued individuals who are respected and treated consistent and professional manner at all time and friendly environment ,where excellency prevails in everything we do.
+                            Mustika kamal adalah tempat persewaan alat musik dan sound system yang didirikan pada tahun 1998. Mustika kamal awalnya hanya menyewakan alat musik saja dan sekarang menyediakan alat musik yang dilengkapi dengan peralatan sound system.Sistem
                         </p>
                     </div>
                     <br>
-                    <b>OUR MISSION</b>
+                    <!-- <b>OUR MISSION</b>
                     <p class="paragraph">
                         We want to make your salon experience as unique and memorable as you are . our mission is to consistently bring you the freshest styles and Ideas by keeping up with the current trends and consistently educating our selves about the best practices . all of our team support one another in their personal strengths and goals within the beauty industry and community .
                     </p>
@@ -23,7 +23,7 @@
                     </p>
                     <p class="paragraph">
                         Glam hair culture  is dedicated to your beauty needs .
-                    </p>
+                    </p> -->
                 </div>
             </div>
             <div class="col-md-6">
